@@ -11,7 +11,7 @@ cargo install toml-bombadil
 ```
 
 After installing bombadil you can choose a profile to install (either desktop or laptop)
-** This command moves your currents configs to the hypr_dotfiles/.dots directory **
+**This command moves your currents configs to the hypr_dotfiles/.dots directory**
 
 ```bash
 git clone https://github.com/HenrySteinmetz/hypr_dotfiles.git
