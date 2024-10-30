@@ -14,11 +14,6 @@ export BROWSER="brave"
 export TERMINAL="alacritty"
 export EDITOR="alacritty -e nvim"
 
-# Spotify Api Keys for rspotify
-export RSPOTIFY_CLIENT_ID="b1132cb4bb944fbd83248fb753d20e67"
-export RSPOTIFY_CLIENT_SECRET="cdc097c684474ac7b18aeb737100a185"
-export RSPOTIFY_REDIRECT_URI="https://example.com/callback"
-
 # Aliases
 alias conf="cd ~/.config"
 alias progr="cd ~/Programming"
