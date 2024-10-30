@@ -1,0 +1,78 @@
+[colors.bright]
+black = "#11111b"
+blue = "#89b4fa"
+cyan = "#fab387"
+green = "#74c7ec"
+magenta = "#cba6f7"
+red = "#f38ba8"
+white = "#cdd7f4"
+yellow = "#f2cdcd"
+
+[colors.normal]
+black = "#11111b"
+blue = "#89b4fa"
+cyan = "#fab387"
+green = "#74c7ec"
+magenta = "#cba6f7"
+red = "#f38ba8"
+white = "#cdd7f4"
+yellow = "#f2cdcd"
+
+[colors.primary]
+background = "#1e1e2e"
+foreground = "#cba6f7"
+
+[font]
+size = 9.5
+
+[font.bold]
+family = "DejaVu Sans Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "DejaVu Sans Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "DejaVu Sans Mono"
+style = "Italic"
+
+[font.normal]
+family = "DejaVu Sans Mono"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 1
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[window]
+opacity = 1
+
+[window.padding]
+x = 4
+y = 2

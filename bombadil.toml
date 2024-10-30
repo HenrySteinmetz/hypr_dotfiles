@@ -1,0 +1,44 @@
+# {dotfiles}/bombadil.toml
+# Path to your dotfiles relative to your $HOME directory
+dotfiles_dir = "dotfiles"
+
+[settings]
+colors = [ "colors.toml" ]
+
+
+[profiles.relink]
+laptop = false
+
+[profiles.laptop]
+prehooks = [
+  "./scripts/install-base.sh",
+  # "./scripts/install-laptop.sh",
+]
+posthooks = [
+  "nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'",
+  "hyprctl reload",
+]
+laptop = true
+
+[profiles.desktop]
+prehooks = [
+  "./scripts/install-base.sh",
+]
+posthooks = [
+  "nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'",
+  "hyprctl reload",
+]
+laptop = false
+
+
+[settings.dots]
+alacritty = { source = "alacritty", target = ".config/alacritty" }
+dunst = { source = "dunst", target = ".config/dunst" }
+hypr = { source = "hypr", target = ".config/hypr" }
+kando = { source = "kando", target = ".config/kando" }
+nvim = { source = "nvim", target = ".config/nvim" }
+starship = { source = "starship.toml", target = ".config/starship.toml" }
+wallpapers = { source = "Wallpapers", target = "Wallpapers" }
+waybar = { source = "waybar", target = ".config/waybar" }
+wofi = { source = "wofi", target = ".config/wofi" }
+zshrc = { source = ".zshrc", target = ".zshrc" }

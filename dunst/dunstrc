@@ -1,0 +1,54 @@
+[global]
+frame_color = "#89b4fa"
+separator_color= frame
+
+monitor = 1
+transparency = 0
+stack_duplicates = false
+hide_duplicate_count = true
+follow = none
+
+dmenu = wofi --show drun
+
+font = Font Awesome 10
+gap_size = 15
+corner_radius = 12
+
+min_icon_size = 128
+icon_corner_radius = 5
+
+origin = top-right
+offset = 15x30
+width = 300
+height = 200
+
+progress_bar = true
+progress_bar_height = 10
+progress_bar_min_width = 300
+progress_bar_max_width = 400
+progress_bar_corner_radius = 4
+
+shrink = false
+
+notification_limit = 5
+
+padding = 8
+horizontal_padding = 10
+
+idle_threshold = 120
+
+timeout = 10
+
+[urgency_low]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+
+[urgency_normal]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+
+[urgency_critical]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+frame_color = "#f38ba8"
+

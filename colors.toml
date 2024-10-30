@@ -1,0 +1,28 @@
+## General
+text = "#cdd6f4"
+
+bg1 = "#1e1e2e"
+bg2 = "#313244"
+
+accent1 = "#cba6f7"
+accent2 = "#fab387"
+
+[terminal]
+fg = "#cba6f7"
+bg = "#1e1e2e"
+
+black = "#11111b"
+blue = "#89b4fa"
+cyan = "#fab387"
+green = "#74c7ec"
+magenta = "#cba6f7"
+red = "#f38ba8"
+white = "#cdd7f4"
+yellow = "#f2cdcd"
+
+## App specific
+hyprland_border = "#11111b"
+
+[notification_border]
+normal = "#89b4fa"
+urgent = "#f38ba8"

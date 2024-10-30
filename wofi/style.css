@@ -1,0 +1,15 @@
+window {
+  border-radius: 20px;
+  border: 2px solid #cba6f4;
+}
+
+#inner-box {
+  margin: 10px;
+  spacing: 10px;
+  margin-bottom: 30px;
+}
+
+entry {
+  margin: 10px;
+  margin-bottom: 0px;
+}

@@ -1,0 +1,30 @@
+* {
+  font-family: FontAwesome;
+  font-weight: bold;
+  color: #cdd6f4;
+}
+
+window#waybar {
+  border-radius: 20px;
+  border: 2px solid #cba6f4;
+  padding: 20px; 
+}
+
+#workspaces button {
+  padding: 0 10px;
+  background-color: transparent;
+  color: #cdd6f4;
+  border-radius: 10px;
+}
+
+.modules-left {
+  margin-left: 10px;
+}
+
+.modules-right {
+  margin-right: 10px;
+}
+
+#workspaces button.focused {
+  color: red;
+}
