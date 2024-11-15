@@ -1,18 +1,20 @@
 * {
   font-family: FontAwesome;
   font-weight: bold;
-  color: #cdd6f4;
+  color: {{ colors.waybar.text }};
+  background-color: {{ colors.waybar.bg1 }}
 }
 
 window#waybar {
   border-radius: 20px;
-  border: 2px solid #cba6f4;
+  border: 2px solid {{ colors.waybar.border }};
   padding: 20px; 
 }
 
 #workspaces button {
   padding: 0 10px;
   background-color: transparent;
+  text-align: center;
   color: #cdd6f4;
   border-radius: 10px;
 }

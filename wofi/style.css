@@ -1,6 +1,7 @@
 window {
   border-radius: 20px;
-  border: 2px solid #cba6f4;
+  background-color: {{ bg1 }};
+  border: 2px solid {{ accent1 }};
 }
 
 #inner-box {

@@ -1,11 +1,12 @@
 ## General
 text = "#cdd6f4"
 
+bg0 = "11111b"
 bg1 = "#1e1e2e"
 bg2 = "#313244"
 
-accent1 = "#cba6f7"
-accent2 = "#fab387"
+accent1 = "#cba6f7" # Mauve
+accent2 = "#fab387" # Peach
 
 [terminal]
 fg = "#cba6f7"
@@ -24,5 +25,12 @@ yellow = "#f2cdcd"
 hyprland_border = "#11111b"
 
 [notification_border]
-normal = "#89b4fa"
-urgent = "#f38ba8"
+normal = "#89b4fa"  # Blue
+urgent = "#f38ba8"  # Red
+
+[waybar]
+text = "#cdd6f4"    # Global text
+bg1 = "#1e1e2e"     # Global bg1
+bg2 = "#313244"     # Global bg2
+border = "#cba6f7"  # Mauve
+

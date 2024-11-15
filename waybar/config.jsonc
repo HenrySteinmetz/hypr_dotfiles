@@ -1,12 +1,14 @@
+{{% set height = 1/36 * desktop.main_monitor.height %}}
+{{% set margin_side = 1/38.4 * desktop.main_monitor.width %}}
 {
   "name": "MainBar",
-  "height": 32,
+  "height": {{ height }},
   "spacing": 5,
   "position": "top",
-  "output": "DP-1",
+  "output": {{ desktop.monitor1 }},
 
-  "margin-left": 50,
-  "margin-right": 50,
+  "margin-left": {{ margin_side }},
+  "margin-right": {{ margin_side }},
   "margin-top": 10,
   "spacing": 10,
   "fixed-center": true,
@@ -22,6 +24,9 @@
 
   "modules-right": [
     "tray",
+    {{% if laptop is true %}}
+    "battery",
+    {{% endif %}}
     "clock"
   ],
 
@@ -63,5 +68,15 @@
     "format": "{:%H:%M} 󰀠 ",
     "format-alt": "{:L%A, %B %d, %Y (%R)} 󰃮 ",
     "tooltip": false
+  }
+
+  "battery" {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon} ",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25
   }
 }

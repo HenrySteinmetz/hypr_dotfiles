@@ -4,6 +4,7 @@ dotfiles_dir = "dotfiles"
 
 [settings]
 colors = [ "colors.toml" ]
+desktop = [ "desktop.toml" ]
 
 
 [profiles.relink]

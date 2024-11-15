@@ -1,0 +1,7 @@
+wallpaper_dir = "$HOME/Wallpapers/"
+wallpaper = "$HOME/Wallpapers/japanese_landscape.webp"
+
+[main_monitor]
+name = "DP-1"
+width = "1920"
+height = "1080"

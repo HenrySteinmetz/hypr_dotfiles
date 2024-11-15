@@ -7,10 +7,10 @@ echo "Checking for an existing AUR helper"
 # Check if yay or paru is installed and if not install yay
 if command -v yay &> /dev/null; then
   echo "yay found"
-  package_manager=yay
+  package_manager="yay"
 elif command -v paru &> /dev/null; then
   echo "paru found"
-  package_manager=paru
+  package_manager="paru"
 else
   echo "No AUR helper found, installing yay"
   sleep 2
@@ -19,7 +19,7 @@ else
   cd yay-bin
   makepkg -si
   if command -v yay &> /dev/null; then
-    package_manager=yay
+    package_manager="yay"
   fi
   echo "yay not found after installation"
 fi
@@ -40,7 +40,16 @@ sudo pacman -S --needed --noconfirm \
   ttf-font-awesome 6.6.0-1
 
 ## AUR packages
-$package_manager -S --needed --noconfirm \
-  ttf-material-design-icons-git \
-  kando-bin \
-  autojump
+if [ "$package_manager" = "yay" ]; then
+  yay -S --needed --noconfirm \
+    ttf-material-design-icons-git \
+    catppuccin-gtk-theme-mocha \
+    kando-bin \
+    autojump
+elif [ "$package_manager" = "paru" ]; then
+  paru -S --needed --noconfirm \
+    ttf-material-design-icons-git \
+    catppuccin-gtk-theme-mocha \
+    kando-bin \
+    autojump
+fi
